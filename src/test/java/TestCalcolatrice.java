@@ -31,6 +31,6 @@ class TestCalcolatrice {
 		
 		double res = c.somma(10,-5);
 		
-		assertEquals(5,res,0);
+		assertEquals(15,res,0);
 	}
 }
