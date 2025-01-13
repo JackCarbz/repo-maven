@@ -6,19 +6,28 @@ public class Calcolatrixce
 		double s = 0;
 		for(double addendo : addendi)
 		{
+			if(addendo < 0)
+			{
+				System.out.println("addendo è negativo");
+			}
+			if(addendo == 0)
+			{
+				System.out.println("addendo è 0");
+			}
+			if(addendo > 0)
+			{
+				System.out.println("addendo è positivo");
+			}
 			s = s + addendo;
 		}
 		return s;
 	}
 	
-	public double sottrazione(double...addendi)
+	public double differenza (double d1, double d2)
 	{
-		double s = addendi[0];
-		for(int i = 1; i<addendi.length; i++)
-		{
-			s = s - addendi[i];
-		}
-		return s;
+		double diff = 0;
+		diff = d1 - d2;
+		return diff;
 	}
 	
 	public double moltiplicazione(double...addendi)
@@ -30,6 +39,7 @@ public class Calcolatrixce
 		}
 		return s;
 	}
+	
 	public double divisione(double...addendi) throws ArithmeticException
 	{
 		double s = addendi[0];

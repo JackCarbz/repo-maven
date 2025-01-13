@@ -3,7 +3,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class TestCalcolatrice {
-
 	@Test
 	public void testSomma() 
 	{
@@ -19,29 +18,29 @@ class TestCalcolatrice {
 	{
 		Calcolatrixce c = new Calcolatrixce();
 		
-		double res = c.somma(6,6);
+		double res = c.somma(2,0);
 		
-		assertEquals(12,res,0);
+		assertEquals(2,res,0);
 	}
 	
 	@Test
-	public void testSommaNegativo() 
+	public void testSomma3() 
 	{
 		Calcolatrixce c = new Calcolatrixce();
 		
-		double res = c.somma(10,-5);
+		double res = c.somma(2,-1);
 		
-		assertEquals(5,res,0);
+		assertEquals(1,res,0);
 	}
 	
 	@Test
-	public void testSottra()
+	public void testDifferenza() 
 	{
 		Calcolatrixce c = new Calcolatrixce();
 		
-		double res = c.sottrazione(10,5);
+		double res = c.differenza(5,2);
 		
-		assertEquals(5,res,0);
+		assertEquals(3,res,0);
 	}
 	
 	@Test
