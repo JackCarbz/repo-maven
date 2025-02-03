@@ -1,6 +1,9 @@
 
 public class Calcolatrixce 
 {
+
+	//ciao prova per project
+	
 	public double somma(double...addendi)
 	{
 		double s = 0;
